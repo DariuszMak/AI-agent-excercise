@@ -1,12 +1,14 @@
-import os
 import logging
+import os
+
 import structlog
+
 
 def logging_setup(level: int = logging.INFO, log_file: str | None = None) -> None:
     is_docker = os.getenv("LOG_TO_FILE", "true").lower() == "false"
     if is_docker:
         log_file = None
-    
+
     root_logger = logging.getLogger()
     root_logger.setLevel(level)
     root_logger.handlers.clear()

@@ -1,4 +1,5 @@
 import logging
+import os
 from typing import TYPE_CHECKING, Any
 
 import pytest
@@ -12,6 +13,11 @@ if TYPE_CHECKING:
 
 pytestmark = pytest.mark.usefixtures("reset_logging")
 
+# --- NOWA FIKSTURA ---
+@pytest.fixture(autouse=True)
+def force_file_logging(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("LOG_TO_FILE", "true")
+# ---------------------
 
 @pytest.fixture
 def reset_logging() -> Generator[None]:
