@@ -1,7 +1,9 @@
 filebeat.inputs:
   - type: container
     paths:
-      - /var/lib/docker/containers/*/*.log
+      - "C:/Users/darek/Documents/Repos/AI-agent-exercise/app.log"
+    json.keys_under_root: true
+    json.add_error_key: true
     processors:
       - add_docker_metadata: ~
       - decode_json_fields:
