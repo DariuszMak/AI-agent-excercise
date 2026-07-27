@@ -1,7 +1,7 @@
 filebeat.inputs:
   - type: container
     paths:
-      - /var/lib/docker/containers/*/*.log
+      - "C:/Users/darek/Documents/Repos/AI-agent-exercise/app.log"
 
 output.elasticsearch:
   hosts: ["http://elasticsearch:9200"]
