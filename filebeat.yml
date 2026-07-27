@@ -8,6 +8,15 @@ filebeat.inputs:
           fields: ["log"]
           overwrite_keys: true
 
+  - type: filestream
+    id: windows-host-app
+    paths:
+      - /var/log/host_app/*.log
+    processors:
+      - decode_json_fields:
+          fields: ["message"] # WAŻNE: dla czystego pliku dekodujemy 'message', nie 'log'
+          overwrite_keys: true
+
 output.elasticsearch:
   hosts: ["http://elasticsearch:9200"]
 
