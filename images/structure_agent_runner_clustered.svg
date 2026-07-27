@@ -347,7 +347,7 @@
 <!-- src -->
 <g id="node53" class="node">
 <title>src</title><style>.edge>path:hover{stroke-width:8}</style>
-<polygon fill="#5010f9" stroke="#ffffff" points="3103.25,-1180.39 3100.25,-1184.39 3079.25,-1184.39 3076.25,-1180.39 3049.25,-1180.39 3049.25,-1144.39 3103.25,-1144.39 3103.25,-1180.39"/>
+<polygon fill="#5822e7" stroke="#ffffff" points="3103.25,-1180.39 3100.25,-1184.39 3079.25,-1184.39 3076.25,-1180.39 3049.25,-1180.39 3049.25,-1144.39 3103.25,-1144.39 3103.25,-1180.39"/>
 <text xml:space="preserve" text-anchor="middle" x="3076.25" y="-1158.89" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#e0e0e0">src</text>
 </g>
 <!-- faiss&#45;&gt;src -->
@@ -1146,7 +1146,7 @@
 <g id="edge128" class="edge">
 <title>src&#45;&gt;agent_runner_py</title><style>.edge>path:hover{stroke-width:8}</style>
 <path fill="none" stroke="#ffffff" d="M3103.47,-1155.4C3129.54,-1148.45 3170.13,-1137.64 3201.97,-1129.15"/>
-<polygon fill="#5010f9" stroke="#ffffff" points="3202.6,-1132.61 3211.36,-1126.65 3200.8,-1125.84 3202.6,-1132.61"/>
+<polygon fill="#5822e7" stroke="#ffffff" points="3202.6,-1132.61 3211.36,-1126.65 3200.8,-1125.84 3202.6,-1132.61"/>
 </g>
 <!-- structlog&#45;&gt;agent_runner_py -->
 <g id="edge129" class="edge">
