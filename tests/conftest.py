@@ -15,6 +15,7 @@ if TYPE_CHECKING:
 USE_DATA_FROM_CODE = True
 DOCUMENTS_SOURCE = Path("storage/documents/EN")
 
+
 def _fake_embed(text: str) -> np.ndarray:
     rng = np.random.default_rng(abs(hash(text)) % (2**32))
     v = rng.random(384).astype(np.float32)
