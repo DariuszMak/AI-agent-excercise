@@ -12,9 +12,10 @@ filebeat.inputs:
     id: windows-host-app
     paths:
       - /var/log/host_app/*.log
+    prospector.scanner.check_interval: 2s
     processors:
       - decode_json_fields:
-          fields: ["message"] # WAŻNE: dla czystego pliku dekodujemy 'message', nie 'log'
+          fields: ["message"]
           overwrite_keys: true
 
 output.elasticsearch:
