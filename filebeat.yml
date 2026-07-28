@@ -5,7 +5,7 @@ filebeat.inputs:
     processors:
       - add_docker_metadata: ~
       - decode_json_fields:
-          fields: ["event"]
+          fields: ["log"]
           overwrite_keys: true
 
 output.elasticsearch:

@@ -8,7 +8,7 @@ import structlog
 
 from src.helpers.logging_setup import logging_setup
 
-logging_setup()
+logging_setup(log_file="app.log")
 
 logger = structlog.get_logger(__name__)
 
