@@ -4,7 +4,7 @@ import os
 import structlog
 
 
-def logging_setup(level: int = logging.INFO, log_file: str | None = None) -> None:
+def logging_setup(level: int = logging.INFO, log_file: str | None = "app.log") -> None:
     is_docker = os.getenv("LOG_TO_FILE", "true").lower() == "false"
     if is_docker:
         log_file = None
