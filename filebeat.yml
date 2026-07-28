@@ -1,4 +1,5 @@
 filebeat.inputs:
+
   - type: container
     paths:
       - /var/lib/docker/containers/*/*.log
