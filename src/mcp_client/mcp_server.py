@@ -233,5 +233,5 @@ def fetch_external_context(topic: str) -> str:
 
 
 if __name__ == "__main__":
-    logging_setup()
+    logging_setup(log_file="app.log")
     server.run()
