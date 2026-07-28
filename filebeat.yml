@@ -13,6 +13,7 @@ filebeat.inputs:
     id: app-log-stream
     paths:
       - /usr/share/filebeat/app_logs/app.log
+    take_over: true
 
 output.elasticsearch:
   hosts: ["http://elasticsearch:9200"]
