@@ -14,11 +14,6 @@ filebeat.inputs:
     paths:
       - /usr/share/filebeat/app_logs/app.log
     take_over: true
-    processors:
-      - decode_json_fields:
-          fields: ["message"]
-          target: ""
-          overwrite_keys: true
 
 output.elasticsearch:
   hosts: ["http://elasticsearch:9200"]
