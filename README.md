@@ -26,18 +26,18 @@ You can also use VSCode `settings.json` and `launch.json` files to run the proje
 
 ### Fast native dev
 
-```commandline
+```console
 task full-dev-native ; 
 ```
 
 ### Full analysis
 
-```commandline
+```console
 task full-static-analyzis ; 
 ```
 
 Check installed models:
 
-```commandline
+```console
 ollama list ; 
 ```
